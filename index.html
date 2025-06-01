@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Salud</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .formulario {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 2px solid #2e7d32;
+            border-radius: 8px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formularios de Salud y Hábitos</h2>
+    <div class="container">
+        <div class="formulario">
+            <h3>Información Médica</h3>
+            <form>
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+                
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" name="altura" required>
+                
+                <label for="grupo_sanguineo">Grupo Sanguíneo:</label>
+                <select id="grupo_sanguineo" name="grupo_sanguineo">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                </select>
+                
+                <button type="submit">Enviar Datos</button>
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h3>Hábitos y Rutina</h3>
+            <form>
+                <label for="horas_suenio">Horas de Sueño por Día:</label>
+                <input type="number" id="horas_suenio" name="horas_suenio" required>
+                
+                <label for="actividad_fisica">Nivel de Actividad Física:</label>
+                <select id="actividad_fisica" name="actividad_fisica">
+                    <option value="bajo">Bajo</option>
+                    <option value="moderado">Moderado</option>
+                    <option value="alto">Alto</option>
+                </select>
+                
+                <label for="dieta">Tipo de Dieta:</label>
+                <input type="text" id="dieta" name="dieta" required>
+                
+                <button type="submit">Registrar Hábitos</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
